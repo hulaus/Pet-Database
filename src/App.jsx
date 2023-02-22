@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Petlog from './components/Petlog';
-import NewPet from './components/NewPet'
+import NewPet from './components/NewPet';
+import Home from './components/Home'
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <header>
         <ul>
           <li>
-            <Link to='/'> Home </Link>
+            <Link to='/Home'> Home </Link>
           </li>
           <li>
             <Link to='/Petlog'> Pet Log </Link>
@@ -26,6 +27,7 @@ function App() {
           <Route path='/' />
           <Route path='/Petlog' element={<Petlog />} />
           <Route path='/NewPet' element={<NewPet />} />
+          <Route path='/Home' element={<Home />} />
         </Routes>
       </main>
       </Router>
