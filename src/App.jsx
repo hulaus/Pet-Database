@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import Petlog from './components/Petlog';
-import NewPet from './components/NewPet';
-import Home from './components/Home'
+import Petlog from './components/petlog/Petlog';
+import NewPet from './components/newPet/NewPet';
+import Home from './components/Home/Home'
 
 
 function App() {
