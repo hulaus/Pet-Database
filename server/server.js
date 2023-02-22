@@ -10,6 +10,7 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname,'../build')));
 
 //CONTROLLERS
 const petsController = require('./controllers/pets_controller');
@@ -17,6 +18,10 @@ app.use('/api/pets', petsController);
 
 
 // LISTEN
-app.listen(400, () => {
-    console.log('Server is running on port 400');
+app.listen(4005, () => {
+    console.log('Server is running on port 4005');
+})
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname,'../build/index.html'));
 })
