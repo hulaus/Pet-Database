@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
    
 
 function Home() {
@@ -7,8 +7,14 @@ function Home() {
 
 
          return (
-        <div>
-        <h1>Hello World</h1>
+        <div
+        style = {{backgroundColor: "lightblue"
+
+        }}
+        >
+            <div id="Home-top">
+        <h1>Welcome to this Web App</h1>
+        </div>
         </div>
     )
          }
