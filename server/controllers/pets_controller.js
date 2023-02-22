@@ -5,7 +5,7 @@ const { Pet } = db
 //GET ALL PETS
 pets.get('/', async (req,res) => {
     try {
-        const foundPets = await Pet.Findall()
+        const foundPets = await Pet.findAll()
         res.status(200).json(foundPets)
     } catch (err) {
         res.status(500).json("Server Error")

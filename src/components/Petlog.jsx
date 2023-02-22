@@ -5,7 +5,7 @@ export default function Petlog() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:400/api/pets/')
+            const response = await fetch('http://localhost:4005/api/pets/')
             const json = await response.json()
             setPets(json)
         }
