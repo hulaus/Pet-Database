@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react'
 
 export default function Petlog() {
-    const [Pet, setPet] = useState ([])
+    const [pets, setPets] = useState ([])
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:4005/api/Pet')
+            const response = await fetch('http://localhost:400/api/pets/')
             const json = await response.json()
-            setPet(json)
+            setPets(json)
         }
         fetchData()
     }, [])
@@ -16,10 +16,12 @@ export default function Petlog() {
         <div>
         <h1>Pet Log</h1>
         <ul>
-            {Pet.map((pets, index) =>(
+            { pets.map((Pet, index) => (
             <li key={index}>
-                <div>{pets.name}</div>
-                <div>{pets.Birth_date}</div>
+                <div>{Pet.name}</div>
+                <div>{Pet.birth_date}</div>
+                <div>{Pet.health_issues}</div>
+                <div>{Pet.comments}</div>
             </li>
             ))}
         </ul>

@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('Pets', [
+    await queryInterface.bulkInsert('pets', [
         {
           name: 'Tobi',
           birth_date:2002,
@@ -41,6 +41,6 @@ module.exports = {
 //Use sequelize db:seed:all to migrate data into Supabase Table
 
   async down (queryInterface, Sequelize) {
-   await queryInterface.bulkDelete('Pets', null, {})
+   await queryInterface.bulkDelete('pets', null, {})
   }
 };

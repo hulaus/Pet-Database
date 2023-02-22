@@ -1,9 +1,9 @@
-const Pets = require('express').Router()
+const pets = require('express').Router()
 const db = require('../models')
 const { Pet } = db
 
 //GET ALL PETS
-Pets.get('/', async (req, res) => {
+pets.get('/', async (req,res) => {
     try {
         const foundPets = await Pet.Findall()
         res.status(200).json(foundPets)
@@ -13,4 +13,4 @@ Pets.get('/', async (req, res) => {
     }
 })
 
-module.exports = Pets
+module.exports = pets
