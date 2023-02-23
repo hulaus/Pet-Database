@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(46, 236, 138);
+}
+
+#welcome {
+    background-color:gainsboro;
+    margin-bottom: -1rem;
+    max-width: 100rem;
+    margin: 1rem;
+    padding:-1rem;
+
+}
+
+.container{
+    max-width: 100rem;
+    max-height: 30rem;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgb(194, 186, 186);
+    border-radius: 4px;
+    background:white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
