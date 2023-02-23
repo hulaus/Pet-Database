@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(46, 236, 138);
+    background-color: rgb(9, 197, 100);
 }
 
 #welcome {
@@ -7,8 +7,8 @@ body{
     margin-bottom: -1rem;
     max-width: 100rem;
     margin: 1rem;
-    padding:-1rem;
-
+    box-shadow: 0 0 40px rgb(194, 186, 186);
+    border-radius: 4px;
 }
 
 .container{
@@ -18,9 +18,20 @@ body{
     padding: 2rem;
     box-shadow: 0 0 40px rgb(194, 186, 186);
     border-radius: 4px;
-    background:white;
+    background:gainsboro;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
+
+.App {
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    flex-flow: column wrap;
+    height: 250px;
+}
+
+

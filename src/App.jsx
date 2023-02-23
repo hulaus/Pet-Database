@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <header>
         <ul>
           <li>
             <Link to='/Home'> Home </Link>
@@ -21,7 +20,6 @@ function App() {
             <Link to='/NewPet'>New Pet</Link>
           </li>
         </ul>
-      </header>
       <main>
         <Routes>
           <Route path='/' />
