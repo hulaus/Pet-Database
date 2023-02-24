@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import '../newPet/styles.css';
 
 function NewPet() {
 
@@ -10,15 +11,15 @@ function NewPet() {
         <div>
             <section class="section container">
             <form name="contact" id="contact-form">
-            <h1 class="title" id="contact">Create A New Pet Profile</h1>
+            <h1 class="title" id="contact">Create A New Pet Patient Profile</h1>
             <div class="field">
                 <label class="label" for="name">Pet Name</label>
                 <div class="control">
-                    <input
+                    <input 
                     required
                     class="input"
                     type="text"
-                    placeholder="name"
+                    autoFocus placeholder="Your Name"
                     name="name"
                     />
                 </div>
