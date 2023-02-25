@@ -2,32 +2,34 @@ import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Petlog from './components/petlog/Petlog';
 import NewPet from './components/newPet/NewPet';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
+        <nav className='Nav-Container'>
+          <div>
         <ul>
-          <li>
+          <li className="Nav-Item">
             <Link to='/Home'> Home </Link>
           </li>
-          <li>
+          <li className="Nav-Item">
             <Link to='/Petlog'> Pet Log </Link>
           </li>
-          <li>
+          <li className="Nav-Item">
             <Link to='/NewPet'>New Pet</Link>
           </li>
         </ul>
-      <main>
         <Routes>
           <Route path='/' />
           <Route path='/Petlog' element={<Petlog />} />
           <Route path='/NewPet' element={<NewPet />} />
           <Route path='/Home' element={<Home />} />
         </Routes>
-      </main>
+      </div>
+      </nav>
       </Router>
     </div>
   );
