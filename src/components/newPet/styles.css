@@ -10,7 +10,7 @@ margin:0;
 
 form { 
     max-width: 70rem;
-    max-height: 20rem;
+    max-height: 30rem;
     margin: 1rem;
     padding: 2rem;
     border-radius: 4px;
@@ -29,7 +29,7 @@ font-size: 18px;
 font:500 1rem sans-serif;
 }
 
-input {
+  input {
     display: block;
     width: 100%;
     padding: 0.5rem;

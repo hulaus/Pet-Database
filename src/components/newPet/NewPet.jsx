@@ -13,6 +13,31 @@ function NewPet() {
             <section class="section container">
             <form name="contact" id="contact-form">
             <h1 class="title" id="contact">Create A New Pet Patient Profile</h1>
+         
+            <div class="field" >
+                <label class="label" className='Name-Input' for="firstName">First Name</label>
+                <div class="control">
+                    <input
+                    required
+                    class="input"
+                    type="text"
+                    autoFocus placeholder="First Name"
+                    name="firstName"
+                    />
+                <label class="label"  className='Name-Input' for="lastName">Last Name</label>
+                <div class="control">
+                    <input
+                    required
+                    class="input"
+                    type="text"
+                    autoFocus placeholder="Last Name"
+                    name="lastName"
+                    />
+                </div>
+                </div>
+
+            </div>
+
             <div class="field">
                 <label class="label" for="name">Pet Name</label>
                 <div class="control">
@@ -20,7 +45,7 @@ function NewPet() {
                     required
                     class="input"
                     type="text"
-                    autoFocus placeholder="Your Name"
+                    autoFocus placeholder="Pet's Name"
                     name="name"
                     />
                 </div>
@@ -33,7 +58,7 @@ function NewPet() {
                     class="input"
                     type="date"
                     required
-                    placeholder="Birthday input"
+                    autoFocus placeholder="Birthday input"
                     name="Birthdate"
                     />
                 </div>
@@ -46,7 +71,7 @@ function NewPet() {
                     class="input"
                     type="text"
                     required
-                    placeholder="Email input"
+                    autoFocus placeholder="Email input"
                     name="healthIssues"
                     />
                 </div>
@@ -59,7 +84,7 @@ function NewPet() {
                     class="input"
                     type="text"
                     required
-                    placeholder="Extra Information"
+                    autoFocus placeholder="Extra Information"
                     name="comments"
                     />
                 </div>
