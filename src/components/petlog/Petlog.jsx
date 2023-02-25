@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './styles.css'
 
 export default function Petlog() {
     const [pets, setPets] = useState ([])
@@ -13,15 +14,15 @@ export default function Petlog() {
     }, [])
     
     return(
-        <div>
+        <div className="Pet-Log">
         <h1>Pet Log</h1>
         <ul>
             { pets.map((Pet, index) => (
             <li key={index}>
-                <div>{Pet.name}</div>
-                <div>{Pet.birth_date}</div>
-                <div>{Pet.health_issues}</div>
-                <div>{Pet.comments}</div>
+                <div className='petName'>{Pet.name}</div>
+                <div className='petBirth'>{Pet.birth_date}</div>
+                <div className='petHealth'>{Pet.health_issues}</div>
+                <div className='petComment'>{Pet.comments}</div>
             </li>
             ))}
         </ul>

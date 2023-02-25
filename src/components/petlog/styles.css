@@ -1,0 +1,35 @@
+.Pet-Log{
+    background:gainsboro;
+}
+
+/* ul li {
+    background-color: mediumpurple;
+    border: 1rem black solid;
+    display: flex;
+    flex-direction: row;
+}
+*/
+.petName{
+    background: slategray;
+    border: .5rem black solid;
+    display: inline-block;
+}
+
+.petBirth{
+    background: slategray;
+    border: .5rem black solid;
+    display: inline-block;
+}
+
+.petHealth{
+    background: slategray;
+    border: .5rem black solid;
+    display:  inline-block;
+
+}
+
+.petComment{
+    background: slategray;
+    border: .5rem black solid;
+    display:  inline-block;
+}
