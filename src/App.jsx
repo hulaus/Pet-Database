@@ -2,7 +2,11 @@ import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Petlog from './components/petlog/Petlog';
 import NewPet from './components/newPet/NewPet';
-import Home from './components/Home/Home';
+import Home from './components/Home/Home'
+import SearchBar from "./components/SearchBar"
+
+
+
 
 
 function App() {
@@ -35,4 +39,6 @@ function App() {
   );
 }
 
-export default App;
+<SearchBar />
+
+  export default App;

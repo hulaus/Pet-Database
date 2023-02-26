@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(9, 197, 100);
+    background-color: rgb(64, 231, 175);
 }
 
 #welcome {
@@ -23,16 +23,5 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-/*  Temporary styling change to see how form looks.
-.App {
-    text-align: center;
-    text-decoration: none;
-    display:flex;
-    flex-flow: column wrap;
-    height: 250px;
-}
-
-*/

@@ -1,12 +1,7 @@
-import { useState, useEffect } from 'react'
-import '../newPet/styles.css';
-import { BrowserRouter} from 'react-router-dom'
-
-
+import "./styles.css"
 
 
 function NewPet() {
-
     return(
         <body>
         <div>
@@ -71,7 +66,7 @@ function NewPet() {
                     class="input"
                     type="text"
                     required
-                    autoFocus placeholder="Email input"
+                    autoFocus placeholder="Health Input"
                     name="healthIssues"
                     />
                 </div>
