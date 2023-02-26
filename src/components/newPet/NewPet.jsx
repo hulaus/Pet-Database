@@ -16,7 +16,6 @@ function NewPet() {
          
             <div class="field" >
                 <label class="label" className='Name-Input' for="firstName">First Name</label>
-                <div class="control">
                     <input
                     required
                     class="input"
@@ -25,7 +24,6 @@ function NewPet() {
                     name="firstName"
                     />
                 <label class="label"  className='Name-Input' for="lastName">Last Name</label>
-                <div class="control">
                     <input
                     required
                     class="input"
@@ -34,13 +32,9 @@ function NewPet() {
                     name="lastName"
                     />
                 </div>
-                </div>
-
-            </div>
 
             <div class="field">
                 <label class="label" for="name">Pet Name</label>
-                <div class="control">
                     <input 
                     required
                     class="input"
@@ -49,7 +43,6 @@ function NewPet() {
                     name="name"
                     />
                 </div>
-            </div>
 
             <div class="field">
                 <label class="label" for="Birthdate">Date of Birth</label>

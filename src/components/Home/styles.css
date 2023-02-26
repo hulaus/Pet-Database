@@ -11,7 +11,7 @@ body{
     border-radius: 4px;
 }
 
-.container{
+ /* .container{
     max-width: 100rem;
     max-height: 30rem;
     margin: 1rem;
@@ -25,6 +25,7 @@ body{
     justify-content: center;
     text-align: center;
 }
+*/
 
 /*  Temporary styling change to see how form looks.
 .App {

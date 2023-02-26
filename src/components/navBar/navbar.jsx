@@ -1,27 +1,22 @@
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import "../navBar/styles.css";
-
-
-const navBar = () => {
+import React from "react";
+import { Nav, NavLink, NavMenu } 
+    from "./NavbarElements";
+  
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="container">
-      <div className="nav-elements">
-        <ul>
-      <li className="Nav-Item">
-            <Link to='/Home'> Home </Link>
-          </li>
-          <li className="Nav-Item">
-            <Link to='/Petlog'> Pet Log </Link>
-          </li>
-          <li className="Nav-Item">
-            <Link to='/NewPet'>New Pet</Link>
-          </li>
-          </ul>
-          </div>
-      </div>
-    </nav>
-  )
-}
-
-export default navBar;
+    <>
+      <Nav>
+        <NavMenu>
+          <NavLink to="/Petlog" activeStyle>
+            Petlog
+          </NavLink>
+          <NavLink to="/NewPet" activeStyle>
+            New Pet Form
+          </NavLink>
+        </NavMenu>
+      </Nav>
+    </>
+  );
+};
+  
+export default Navbar;
