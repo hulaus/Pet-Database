@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import supabase from "../../config/supabaseClient"
 import './styles.css'
 
+
 export default function Petlog() {
     const [fetchError, setFetchError] = useState()
     const [pets, setPets] = useState ([])
@@ -27,19 +28,21 @@ export default function Petlog() {
     }, [])
     
     return(
-        <div className="Pet-Log">
-            {fetchError && (<p>{fetchError}</p>)}
-            <h1>Pet Log</h1>
-            <ul>
-                { pets.map((Pet, index) => (
-                <li key={index}>
-                    <div className='petName'>{Pet.name}</div>
-                    <div className='petBirth'>{Pet.birth_date}</div>
-                    <div className='petHealth'>{Pet.health_issues}</div>
-                    <div className='petComment'>{Pet.comments}</div>
-                </li>
-                ))}
-            </ul>
+        <div>
+         <header>
+         <input type="search" />
+         </header>   
+        <h1>Pet Log</h1>
+        <ul>
+            { pets.map((Pet, index) => (
+            <li key={index}>
+                <div>{Pet.name}</div>
+                <div>{Pet.birth_date}</div>
+                <div>{Pet.health_issues}</div>
+                <div>{Pet.comments}</div>
+            </li>
+            ))}
+        </ul>
         </div>
     )
 }

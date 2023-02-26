@@ -1,14 +1,9 @@
-import { useState, useEffect } from 'react'
 import './styles.css';
 import Login from '../Login/Login'  
 import navBar from '../navBar/Navbar'; 
 
 function Home() {
-
-
-
-
-         return (
+    return (
         <div>
             <div id="welcome">
         <h1>Clinic Dashboard</h1>
@@ -20,5 +15,6 @@ function Home() {
         </div>
         </div>
     )
-         }
-    export default Home
+}
+
+export default Home
