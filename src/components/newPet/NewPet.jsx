@@ -70,6 +70,7 @@ function NewPet() {
                     onChange={(e) => setName(e.target.value)}
                     />
                 </div>
+            </div>
 
             <div className="field">
                 <label className="label" htmlFor="Birthdate">Date of Birth</label>
