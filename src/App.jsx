@@ -8,6 +8,7 @@ import Update from '../src/components/newPet/updatePet'
 import { Navbar } from 'react-bootstrap';
 import NavbarComp from './components/navBar/NavbarComp'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Axios from 'axios';
 
 function App() {
   return(
