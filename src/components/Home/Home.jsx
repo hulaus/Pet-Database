@@ -5,6 +5,7 @@ import NavbarComp from '../navBar/NavbarComp';
 function Home() {
     return (
         <div>
+            <NavBar />
             <div id="welcome">
         <h1>Clinic Dashboard</h1>
         </div>
