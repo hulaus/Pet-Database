@@ -1,18 +1,17 @@
 import './styles.css';
 import Login from '../Login/Login'  
-import navbar from '../navBar/navbar'; 
+import NavBar from '../navBar/navbar'; 
 
 function Home() {
     return (
         <div>
+            <NavBar />
             <div id="welcome">
-        <h1>Clinic Dashboard</h1>
-        </div>
-        <div>
-        </div>
-        <div>
-            <Login />
-        </div>
+                <h1>Clinic Dashboard</h1>
+            </div>
+            <div>
+                <Login />
+            </div>
         </div>
     )
 }
