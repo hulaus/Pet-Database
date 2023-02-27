@@ -1,6 +1,6 @@
 import './styles.css';
 import Login from '../Login/Login'  
-import navBar from '../navBar/Navbar'; 
+import navbar from '../navBar/navbar'; 
 
 function Home() {
     return (
