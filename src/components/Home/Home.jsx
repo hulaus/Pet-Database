@@ -1,6 +1,6 @@
 import './styles.css';
 import Login from '../Login/Login'  
-import navBar from '../navBar/Navbar'; 
+import NavbarComp from '../navBar/NavbarComp';
 
 function Home() {
     return (
@@ -9,9 +9,6 @@ function Home() {
         <h1>Clinic Dashboard</h1>
         </div>
         <div>
-        </div>
-        <div>
-            <Login />
         </div>
         </div>
     )

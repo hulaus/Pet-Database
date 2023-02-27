@@ -1,44 +1,34 @@
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Login from './components/Login/Login'
+import Home from './components/Home/Home';
 import Petlog from './components/petlog/Petlog';
 import NewPet from './components/newPet/NewPet';
-import Home from './components/Home/Home'
-import SearchBar from "./components/SearchBar"
-
-
-
-
+import Update from '../src/components/newPet/updatePet'
+import { Navbar } from 'react-bootstrap';
+import NavbarComp from './components/navBar/NavbarComp'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return (
-    <div>
-      <Router>
-        <nav className='Nav-Container'>
-          <div>
-        <ul>
-          <li className="Nav-Item">
-            <Link to='/Home'> Home </Link>
-          </li>
-          <li className="Nav-Item">
-            <Link to='/Petlog'> Pet Log </Link>
-          </li>
-          <li className="Nav-Item">
-            <Link to='/NewPet'>New Pet</Link>
-          </li>
-        </ul>
-        <Routes>
-          <Route path='/' />
-          <Route path='/Petlog' element={<Petlog />} />
-          <Route path='/NewPet' element={<NewPet />} />
-          <Route path='/Home' element={<Home />} />
-        </Routes>
-      </div>
-      </nav>
-      </Router>
+  return(
+    <><div className="app">
+      <NavbarComp />
     </div>
+  <BrowserRouter>
+    <nav>
+      <Link to="/Home"></Link>
+      <Link to="/Petlog"></Link>
+      <Link to="/NewPet"></Link>
+    </nav>
+    <Routes>
+      <Route path="/Home" element={<Home />} />
+      <Route path="/Petlog" element={<Petlog />} />
+      <Route path="/NewPet" element={<NewPet />} />
+      <Route path="/UpdatePet:id" element={<Update />} />
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
-
-
-  export default App;
+export default App;

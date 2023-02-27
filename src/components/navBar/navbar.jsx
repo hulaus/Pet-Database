@@ -1,16 +1,15 @@
 import React from "react";
-import { Nav, NavLink, NavMenu } 
-    from "./NavbarElements";
+import { Nav, NavLink, NavMenu } from "./NavbarElements";
   
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavMenu>
-          <NavLink to="/Petlog" activeStyle>
+          <NavLink to="src/components/Petlog" activeStyle>
             Petlog
           </NavLink>
-          <NavLink to="/NewPet" activeStyle>
+          <NavLink to="src/components/NewPet" activeStyle>
             New Pet Form
           </NavLink>
         </NavMenu>
