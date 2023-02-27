@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import supabase from "../../config/supabaseClient"
 import './styles.css'
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
+import Update from "../newPet/UpdatePet"
 
 export default function Petlog() {
     const [fetchError, setFetchError] = useState()
@@ -39,10 +40,9 @@ export default function Petlog() {
                     <div className='petHealth'>{Pet.health_issues}</div>
                     <div className='petComment'>{Pet.comments}</div>
                     <div>
-                        <Link to={"/updatePet" + pets.id}>
+                        <Link to={"/UpdatePet" + Pet.pet_id}>
                             <button>Update Pet Information</button>
                         </Link>
-
                     </div>
                 </li>
                 ))}

@@ -1,7 +1,7 @@
 import supabase from '../../config/supabaseClient'
 import { useState, useEffect } from 'react'
 import '../newPet/styles.css'
-import { useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 
 
