@@ -1,5 +1,6 @@
 import { UseState } from "react";
 import { fullCountries } from "./data/countries.js";
+import Petlog from "./petlog/Petlog.jsx";
 
  
 export default function SearchBar() {
