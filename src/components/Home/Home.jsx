@@ -1,6 +1,6 @@
 import './styles.css';
 import Login from '../Login/Login'  
-import navBar from '../navBar/Navbar'; 
+import NavbarComp from '../navBar/NavbarComp'; 
 
 function Home() {
     return (
@@ -11,6 +11,7 @@ function Home() {
         <div>
         </div>
         <div>
+            <NavbarComp />
             <Login />
         </div>
         </div>
