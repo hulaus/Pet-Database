@@ -6,10 +6,10 @@ const navbar = () => {
     <>
       <Nav>
         <NavMenu>
-          <NavLink to="/Petlog" activeStyle>
+          <NavLink to="src/components/Petlog" activeStyle>
             Petlog
           </NavLink>
-          <NavLink to="/NewPet" activeStyle>
+          <NavLink to="src/components/NewPet" activeStyle>
             New Pet Form
           </NavLink>
         </NavMenu>

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import supabase from "../../config/supabaseClient"
 import './styles.css'
+import Navbar from '../navBar/NavbarComp'
+
 
 
 export default function Petlog() {

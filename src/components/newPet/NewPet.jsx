@@ -3,6 +3,7 @@ import '../newPet/styles.css';
 import { BrowserRouter } from 'react-router-dom'
 import supabase from '../../config/supabaseClient';
 import { useNavigate } from 'react-router-dom'
+import Navbar from '../navBar/NavbarComp'
 
 
 
